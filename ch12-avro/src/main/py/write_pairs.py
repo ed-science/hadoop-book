@@ -8,7 +8,7 @@ from avro import datafile
 
 if __name__ == '__main__':
   if len(sys.argv) != 2:
-    sys.exit('Usage: %s <data_file>' % sys.argv[0])
+    sys.exit(f'Usage: {sys.argv[0]} <data_file>')
   avro_file = sys.argv[1]
   writer = open(avro_file, 'wb')
   datum_writer = io.DatumWriter()
